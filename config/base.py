@@ -21,7 +21,7 @@ SESSION_COOKIE_SECURE = True
 
 ALLOWED_HOSTS = [
     "inginerium.am",
-    "demo-inginerium.herokuapp.com",
+    "inginerium.herokuapp.com",
     "localhost",
     "127.0.0.1"
 ]
