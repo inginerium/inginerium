@@ -11,6 +11,8 @@ SECURE_SSL_REDIRECT = False
 
 # DB Configuration
 USE_PROD_DATABASE = int(os.getenv("USE_PROD_DATABASE"))  # yes: 1, no: 0
+if USE_PROD_DATABASE is None:
+    USE_PROD_DATABASE = 0
 
 if not USE_PROD_DATABASE:
     DATABASES = {
