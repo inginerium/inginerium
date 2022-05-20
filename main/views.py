@@ -29,15 +29,17 @@ def home(request):
 	except:
 		colleague_images = None
 
-
 	services = Service.objects.all().order_by('id')
-
 
 	tdata = Translate.objects.first()
 
-
 	context = {
 		"hero_images": hero_images,
+		"hero_image0": hero_images[0],
+		"hero_image1": hero_images[1],
+		"hero_image2": hero_images[2],
+		"hero_image3": hero_images[3],
+		"hero_image4": hero_images[4],
 		"top_hero_images": top_hero_images,
 		"colleagues": colleague_images,
 		"tdata": tdata,

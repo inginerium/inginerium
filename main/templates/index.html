@@ -283,16 +283,13 @@ http://www.templatemo.com/tm-515-eatery
                
      </div> -->
 
-     <div style="width:100%;text-align:center;font-size:45px; font-weight: 700; margin-bottom: 100px;">Աշխատանքներ</div>
-    <div class="my-flipster" style="">
+     <div id="menu" style="width:100%;text-align:center;font-size:45px; font-weight: 700;margin-top: 100px;">Աշխատանքներ</div>
+    <!-- <div class="my-flipster" >
         <ul>
-            {% for hero_image in hero_images %}
-                <li><img src="{{ hero_image.image.url }}" alt=""></li>
-            {% endfor %}
-<!--          <li><img src="{% static 'images/ashx1.jpg' %}" alt="" ></li>-->
+          <li><img src="{% static 'images/ashx1.jpg' %}" alt="" ></li>
 
         </ul>
-      </div>
+      </div> -->
 
      <!-- TESTIMONIAL -->
      <!-- <section id="testimonial" data-stellar-background-ratio="0.5">
@@ -339,6 +336,49 @@ http://www.templatemo.com/tm-515-eatery
           </div>
      </section>   -->
 
+     <section>
+          <div class="container">
+          <div class="rt-container">
+                <div class="col-rt-12">
+                  <div class="container1">
+                    <input type="radio" id="i1" name="images" checked />
+                    <input type="radio" id="i2" name="images" />
+                    <input type="radio" id="i3" name="images" />
+                    <input type="radio" id="i4" name="images" />
+                    <input type="radio" id="i5" name="images" />
+                    <div class="slide_img" id="one"> <img src="{{ hero_image0.image.url }}">
+                      <label class="prev" for="i5"><span>&#x2039;</span></label>
+                      <label class="next" for="i2"><span>&#x203a;</span></label>
+                    </div>
+                    <div class="slide_img" id="two"> <img src="{{ hero_image1.image.url }}" >
+                      <label class="prev" for="i1"><span>&#x2039;</span></label>
+                      <label class="next" for="i3"><span>&#x203a;</span></label>
+                    </div>
+                    <div class="slide_img" id="three"> <img src="{{ hero_image2.image.url }}">
+                      <label class="prev" for="i2"><span>&#x2039;</span></label>
+                      <label class="next" for="i4"><span>&#x203a;</span></label>
+                    </div>
+                    <div class="slide_img" id="four"> <img src="{{ hero_image3.image.url }}">
+                      <label class="prev" for="i3"><span>&#x2039;</span></label>
+                      <label class="next" for="i5"><span>&#x203a;</span></label>
+                    </div>
+                    <div class="slide_img" id="five"> <img src="{{ hero_image4.image.url }}">
+                      <label class="prev" for="i4"><span>&#x2039;</span></label>
+                      <label class="next" for="i1"><span>&#x203a;</span></label>
+                    </div>
+                    <div id="nav_slide">
+                      <label for="i1" class="dots" id="dot1"></label>
+                      <label for="i2" class="dots" id="dot2"></label>
+                      <label for="i3" class="dots" id="dot3"></label>
+                      <label for="i4" class="dots" id="dot4"></label>
+                      <label for="i5" class="dots" id="dot5"></label>
+                    </div>
+                  </div>
+
+                </div>
+          </div>
+     </div>
+      </section>
      <!-- CONTACT -->
      <section id="contact" data-stellar-background-ratio="0.5" style="margin-top:100px;">
           <div class="container">
@@ -409,14 +449,6 @@ http://www.templatemo.com/tm-515-eatery
                {% for colleague in colleagues %}
                     <div class="slide"><img src="{{ colleague.image.url }}" style="width: 80%;"></div>
                {% endfor %}
-<!--              -->
-<!--              <div class="slide"><img src="{% static 'images/renderforest.jpg' %}" style="width: 80%;"></div>-->
-<!--              <div class="slide"><img src="{% static 'images/renderforest.jpg' %}" style="width: 80%;"></div>-->
-<!--              <div class="slide"><img src="{% static 'images/renderforest.jpg' %}" style="width: 80%;"></div>-->
-<!--              <div class="slide"><img src="{% static 'images/renderforest.jpg' %}" style="width: 80%;"></div>-->
-<!--              <div class="slide"><img src="{% static 'images/renderforest.jpg' %}" style="width: 80%;"></div>-->
-<!--              <div class="slide"><img src="{% static 'images/renderforest.jpg' %}" style="width: 80%;"></div>-->
-
            </section>
         </div>
      <!-- FOOTER -->
